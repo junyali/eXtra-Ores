@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import io.github.junyali.extra_ores.item.ModItems;
+import io.github.junyali.extra_ores.block.ModBlocks;
 
 public class EXtraOres implements ModInitializer {
 	public static final String MOD_ID = "extra-ores";
@@ -14,5 +15,6 @@ public class EXtraOres implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Mod started!");
 		ModItems.initialize();
+		ModBlocks.initialize();
 	}
 }
