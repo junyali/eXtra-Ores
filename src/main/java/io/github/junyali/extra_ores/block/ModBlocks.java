@@ -34,22 +34,22 @@ public class ModBlocks {
     );
 
     public static final Block LUMINITITE_ORE = register(
-            new Block(AbstractBlock.Settings.create().registryKey(LUMINITITE_ORE_KEY).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD)),
+            new Block(AbstractBlock.Settings.create().registryKey(LUMINITITE_ORE_KEY).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).strength(4.0f).requiresTool()),
             LUMINITITE_ORE_KEY,
             true
     );
     public static final Block DEEPSLATE_LUMINITITE_ORE = register(
-            new Block(AbstractBlock.Settings.create().registryKey(DEEPSLATE_LUMINITITE_ORE_KEY).sounds(BlockSoundGroup.LARGE_AMETHYST_BUD)),
+            new Block(AbstractBlock.Settings.create().registryKey(DEEPSLATE_LUMINITITE_ORE_KEY).sounds(BlockSoundGroup.LARGE_AMETHYST_BUD).strength(4.0f).requiresTool()),
             DEEPSLATE_LUMINITITE_ORE_KEY,
             true
     );
     public static final Block RAW_LUMINITITE_BLOCK = register(
-            new Block(AbstractBlock.Settings.create().registryKey(RAW_LUMINITITE_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_CLUSTER)),
+            new Block(AbstractBlock.Settings.create().registryKey(RAW_LUMINITITE_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_CLUSTER).strength(4.0f).requiresTool()),
             RAW_LUMINITITE_BLOCK_KEY,
             true
     );
     public static final Block LUMINITITE_BLOCK = register(
-            new Block(AbstractBlock.Settings.create().registryKey(LUMINITITE_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK)),
+            new Block(AbstractBlock.Settings.create().registryKey(LUMINITITE_BLOCK_KEY).sounds(BlockSoundGroup.AMETHYST_BLOCK).strength(4.0f).requiresTool()),
             LUMINITITE_BLOCK_KEY,
             true
     );
