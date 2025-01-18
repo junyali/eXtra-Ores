@@ -3,6 +3,6 @@
   "item.extra-ores.raw_luminitite": "Raw Luminitite",
   "block.extra-ores.luminitite_ore": "Luminitite Ore",
   "block.extra-ores.deepslate_luminitite_ore": "Deepslate Luminitite Ore",
-  "item.extra-ores.luminitite_block": "Block of Luminitite",
-  "item.extra-ores.raw_luminitite_block": "Block of Raw Luminitite"
+  "block.extra-ores.luminitite_block": "Block of Luminitite",
+  "block.extra-ores.raw_luminitite_block": "Block of Raw Luminitite"
 }
