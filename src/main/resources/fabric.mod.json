@@ -3,13 +3,13 @@
 	"id": "extra-ores",
 	"version": "${version}",
 	"name": "eXtra Ores",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Extra ores and items in vanilla Minecraft!",
 	"authors": [
-		"Me!"
+		"junyali"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://junyali.github.io",
+		"sources": "https://github.com/junyali/extra-ores"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/extra-ores/icon.png",
