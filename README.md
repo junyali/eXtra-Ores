@@ -1,11 +1,11 @@
 # eXtra Ores
 
-A fun little (and the first) modification I have made for Minecraft on the Fabric mod loader! Adds new ores, items and their respective tools and armour sets to play around with.
+My first (and a fun little one!) modification I have made for Minecraft on the Fabric mod loader! Adds new ores, items and their respective tools and armour sets to play around with.
 
 ## Preview
 
 ![Main Demo](https://github.com/junyali/extra-ores/blob/master/preview/demo_main.png?raw=true "Main Demo")
-![Demo Items](https://github.com/junyali/extra-ores/blob/master/preview/demo_main.png?raw=true "Items Demo")
+![Demo Items](https://github.com/junyali/extra-ores/blob/master/preview/demo_items.png?raw=true "Items Demo")
 ![Demo Infernium](https://github.com/junyali/extra-ores/blob/master/preview/demo_infernium.png?raw=true "Infernium Demo")
 ![Demo Voidium](https://github.com/junyali/extra-ores/blob/master/preview/demo_voidium.png?raw=true "Voidium Demo")
 
