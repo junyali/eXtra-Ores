@@ -4,10 +4,10 @@ A fun little (and the first) modification I have made for Minecraft on the Fabri
 
 ## Preview
 
-![Main Demo](./preview/demo_main.png "Main Demo")
-![Demo Items](./preview/demo_items.png "Items Demo")
-![Demo Infernium](./preview/demo_infernium.png "Infernium Demo")
-![Demo Voidium](./preview/demo_voidium.png "Voidium Demo")
+![Main Demo](https://github.com/junyali/extra-ores/blob/master/preview/demo_main.png?raw=true "Main Demo")
+![Demo Items](https://github.com/junyali/extra-ores/blob/master/preview/demo_main.png?raw=true "Items Demo")
+![Demo Infernium](https://github.com/junyali/extra-ores/blob/master/preview/demo_infernium.png?raw=true "Infernium Demo")
+![Demo Voidium](https://github.com/junyali/extra-ores/blob/master/preview/demo_voidium.png?raw=true "Voidium Demo")
 
 ## Features
 
