@@ -15,6 +15,12 @@ A fun little (and the first) modification I have made for Minecraft on the Fabri
 - Infernium Ore, found in the nether with fiery properties (WIP)
 - Voidium Ore, found in the end (WIP)
 
+## To do
+
+- Add recipes (I don't know why but they don't work :( )
+- Add more functionality, balance stats of tools and armours
+- Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation)
+
 ## How to run / build
 
 ### Requirements
