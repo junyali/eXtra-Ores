@@ -11,9 +11,17 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    // Luminitite Keys
     public static final RegistryKey<Item> LUMINITITE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "luminitite"));
     public static final RegistryKey<Item> RAW_LUMINITITE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "raw_luminitite"));
 
+    // Infernium Keys
+    public static final RegistryKey<Item> INFERNIUM_CLUMP_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_clump"));
+
+    // Voidium Keys
+    public static final RegistryKey<Item> VOIDIUM_DUST_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_dust"));
+
+    // Luminitite Items
     public static final Item LUMINITITE = register(
             new Item(new Item.Settings().registryKey(LUMINITITE_KEY)),
             LUMINITITE_KEY
@@ -22,6 +30,18 @@ public class ModItems {
     public static final Item RAW_LUMINITITE = register(
             new Item(new Item.Settings().registryKey(RAW_LUMINITITE_KEY)),
             RAW_LUMINITITE_KEY
+    );
+
+    // Infernium Items
+    public static final Item INFERNIUM_CLUMP = register(
+            new Item(new Item.Settings().registryKey(INFERNIUM_CLUMP_KEY)),
+            INFERNIUM_CLUMP_KEY
+    );
+
+    // Voidium Items
+    public static final Item VOIDIUM_DUST = register(
+            new Item(new Item.Settings().registryKey(VOIDIUM_DUST_KEY)),
+            VOIDIUM_DUST_KEY
     );
 
     public static Item register(Item item, RegistryKey<Item> registryKey) {
@@ -35,6 +55,8 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LUMINITITE);
             entries.add(RAW_LUMINITITE);
+            entries.add(INFERNIUM_CLUMP);
+            entries.add(VOIDIUM_DUST);
         });
     }
 }
