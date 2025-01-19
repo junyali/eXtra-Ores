@@ -11,7 +11,7 @@
 		"homepage": "https://junyali.github.io",
 		"sources": "https://github.com/junyali/extra-ores"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0-only",
 	"icon": "assets/extra-ores/icon.png",
 	"environment": "*",
 	"entrypoints": {
