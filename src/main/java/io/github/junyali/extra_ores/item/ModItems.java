@@ -2,8 +2,12 @@ package io.github.junyali.extra_ores.item;
 
 import io.github.junyali.extra_ores.EXtraOres;
 import io.github.junyali.extra_ores.tool.ModToolMaterial;
+import io.github.junyali.extra_ores.armor.ModArmorMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentAsset;
+import net.minecraft.item.equipment.EquipmentAssetKeys;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
@@ -24,6 +28,12 @@ public class ModItems {
     public static final RegistryKey<Item> INFERNIUM_SHOVEL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_shovel"));
     public static final RegistryKey<Item> INFERNIUM_HOE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_hoe"));
 
+    public static final RegistryKey<EquipmentAsset> INFERNIUM_ARMOR_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(EXtraOres.MOD_ID, "infernium"));
+    public static final RegistryKey<Item> INFERNIUM_HELMET_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_helmet"));
+    public static final RegistryKey<Item> INFERNIUM_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_chestplate"));
+    public static final RegistryKey<Item> INFERNIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_leggings"));
+    public static final RegistryKey<Item> INFERNIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_boots"));
+
     // Voidium Keys
     public static final RegistryKey<Item> VOIDIUM_DUST_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_dust"));
 
@@ -32,6 +42,11 @@ public class ModItems {
     public static final RegistryKey<Item> VOIDIUM_AXE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_axe"));
     public static final RegistryKey<Item> VOIDIUM_SHOVEL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_shovel"));
     public static final RegistryKey<Item> VOIDIUM_HOE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_hoe"));
+
+    public static final RegistryKey<Item> VOIDIUM_HELMET_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_helmet"));
+    public static final RegistryKey<Item> VOIDIUM_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_chestplate"));
+    public static final RegistryKey<Item> VOIDIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_leggings"));
+    public static final RegistryKey<Item> VOIDIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_boots"));
 
     // Luminitite Items
     public static final Item LUMINITITE = register(
@@ -69,6 +84,22 @@ public class ModItems {
             new HoeItem(ModToolMaterial.INFERNIUM_TIER, 1f, -2.5f, new Item.Settings().registryKey(INFERNIUM_HOE_KEY)),
             INFERNIUM_HOE_KEY
     );
+    public static final Item INFERNIUM_HELMET = register(
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(INFERNIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(5))),
+            INFERNIUM_HELMET_KEY
+    );
+    public static final Item INFERNIUM_CHESTPLATE = register(
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(INFERNIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(30))),
+            INFERNIUM_CHESTPLATE_KEY
+    );
+    public static final Item INFERNIUM_LEGGINGS = register(
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.LEGGINGS, new Item.Settings().registryKey(INFERNIUM_LEGGINGS_KEY).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(15))),
+            INFERNIUM_LEGGINGS_KEY
+    );
+    public static final Item INFERNIUM_BOOTS = register(
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(INFERNIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(10))),
+            INFERNIUM_BOOTS_KEY
+    );
 
     // Voidium Items
     public static final Item VOIDIUM_DUST = register(
@@ -98,5 +129,13 @@ public class ModItems {
             entries.add(INFERNIUM_SHOVEL);
             entries.add(INFERNIUM_HOE);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(INFERNIUM_HELMET);
+            entries.add(INFERNIUM_CHESTPLATE);
+            entries.add(INFERNIUM_LEGGINGS);
+            entries.add(INFERNIUM_BOOTS);
+        });
+
     }
 }
