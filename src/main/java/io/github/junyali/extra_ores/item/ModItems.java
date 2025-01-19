@@ -43,6 +43,7 @@ public class ModItems {
     public static final RegistryKey<Item> VOIDIUM_SHOVEL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_shovel"));
     public static final RegistryKey<Item> VOIDIUM_HOE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_hoe"));
 
+    public static final RegistryKey<EquipmentAsset> VOIDIUM_ARMOR_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(EXtraOres.MOD_ID, "voidium"));
     public static final RegistryKey<Item> VOIDIUM_HELMET_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_helmet"));
     public static final RegistryKey<Item> VOIDIUM_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_chestplate"));
     public static final RegistryKey<Item> VOIDIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_leggings"));
@@ -106,6 +107,42 @@ public class ModItems {
             new Item(new Item.Settings().registryKey(VOIDIUM_DUST_KEY)),
             VOIDIUM_DUST_KEY
     );
+    public static final Item VOIDIUM_SWORD = register(
+            new SwordItem(ModToolMaterial.VOIDIUM_TIER, 1f, 1f, new Item.Settings().registryKey(VOIDIUM_SWORD_KEY)),
+            VOIDIUM_SWORD_KEY
+    );
+    public static final Item VOIDIUM_PICKAXE = register(
+            new PickaxeItem(ModToolMaterial.VOIDIUM_TIER, 1f, 1f, new Item.Settings().registryKey(VOIDIUM_PICKAXE_KEY)),
+            VOIDIUM_PICKAXE_KEY
+    );
+    public static final Item VOIDIUM_AXE = register(
+            new AxeItem(ModToolMaterial.VOIDIUM_TIER, 1f, -3.5f, new Item.Settings().registryKey(VOIDIUM_AXE_KEY)),
+            VOIDIUM_AXE_KEY
+    );
+    public static final Item VOIDIUM_SHOVEL = register(
+            new ShovelItem(ModToolMaterial.VOIDIUM_TIER, 1f, -2.5f, new Item.Settings().registryKey(VOIDIUM_SHOVEL_KEY)),
+            VOIDIUM_SHOVEL_KEY
+    );
+    public static final Item VOIDIUM_HOE = register(
+            new HoeItem(ModToolMaterial.VOIDIUM_TIER, 1f, -2.5f, new Item.Settings().registryKey(VOIDIUM_HOE_KEY)),
+            VOIDIUM_HOE_KEY
+    );
+    public static final Item VOIDIUM_HELMET = register(
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(VOIDIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(5))),
+            VOIDIUM_HELMET_KEY
+    );
+    public static final Item VOIDIUM_CHESTPLATE = register(
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(VOIDIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(30))),
+            VOIDIUM_CHESTPLATE_KEY
+    );
+    public static final Item VOIDIUM_LEGGINGS = register(
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.LEGGINGS, new Item.Settings().registryKey(VOIDIUM_LEGGINGS_KEY).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(15))),
+            VOIDIUM_LEGGINGS_KEY
+    );
+    public static final Item VOIDIUM_BOOTS = register(
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(VOIDIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(10))),
+            VOIDIUM_BOOTS_KEY
+    );
 
     public static Item register(Item item, RegistryKey<Item> registryKey) {
         Item registeredItem = Registry.register(Registries.ITEM, registryKey.getValue(), item);
@@ -128,6 +165,12 @@ public class ModItems {
             entries.add(INFERNIUM_AXE);
             entries.add(INFERNIUM_SHOVEL);
             entries.add(INFERNIUM_HOE);
+
+            entries.add(VOIDIUM_SWORD);
+            entries.add(VOIDIUM_PICKAXE);
+            entries.add(VOIDIUM_AXE);
+            entries.add(VOIDIUM_SHOVEL);
+            entries.add(VOIDIUM_HOE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
@@ -135,6 +178,11 @@ public class ModItems {
             entries.add(INFERNIUM_CHESTPLATE);
             entries.add(INFERNIUM_LEGGINGS);
             entries.add(INFERNIUM_BOOTS);
+
+            entries.add(VOIDIUM_HELMET);
+            entries.add(VOIDIUM_CHESTPLATE);
+            entries.add(VOIDIUM_LEGGINGS);
+            entries.add(VOIDIUM_BOOTS);
         });
 
     }

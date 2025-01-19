@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "extra-ores:voidium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "extra-ores:voidium"
+      }
+    ]
+  }
+}

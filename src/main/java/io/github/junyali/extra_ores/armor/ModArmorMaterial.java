@@ -28,5 +28,19 @@ public class ModArmorMaterial {
             TagKey.of(RegistryKeys.ITEM, Identifier.of("infurium_clump")),
             ModItems.INFERNIUM_ARMOR_MATERIAL_KEY
     );
-    public static final ArmorMaterial VOIDIUM_TIER = ArmorMaterials.NETHERITE;
+    public static final ArmorMaterial VOIDIUM_TIER = new ArmorMaterial(
+            20,
+            Map.of(
+                    EquipmentType.HELMET, 4,
+                    EquipmentType.CHESTPLATE, 10,
+                    EquipmentType.LEGGINGS, 8,
+                    EquipmentType.BOOTS, 4
+            ),
+            6,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            4.0F,
+            4.0F,
+            TagKey.of(RegistryKeys.ITEM, Identifier.of("voidium_dust")),
+            ModItems.VOIDIUM_ARMOR_MATERIAL_KEY
+    );
 }
