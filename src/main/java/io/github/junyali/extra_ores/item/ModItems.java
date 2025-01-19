@@ -145,8 +145,7 @@ public class ModItems {
     );
 
     public static Item register(Item item, RegistryKey<Item> registryKey) {
-        Item registeredItem = Registry.register(Registries.ITEM, registryKey.getValue(), item);
-        return registeredItem;
+        return Registry.register(Registries.ITEM, registryKey.getValue(), item);
     }
 
     public static void initialize() {

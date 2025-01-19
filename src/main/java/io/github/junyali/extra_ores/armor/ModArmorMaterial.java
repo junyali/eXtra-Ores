@@ -1,9 +1,7 @@
 package io.github.junyali.extra_ores.armor;
 
-import io.github.junyali.extra_ores.EXtraOres;
 import io.github.junyali.extra_ores.item.ModItems;
 import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.item.equipment.ArmorMaterials;
 import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.SoundEvents;
