@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump",
+        "extra-ores:infernium_clump"
+    ],
+    "result": {
+        "id": "extra-ores:infernium_block",
+        "count": 1
+    }
+}

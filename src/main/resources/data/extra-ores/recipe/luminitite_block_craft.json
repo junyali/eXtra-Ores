@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite",
+        "extra-ores:luminitite"
+    ],
+    "result": {
+        "id": "extra-ores:luminitite_block",
+        "count": 1
+    }
+}

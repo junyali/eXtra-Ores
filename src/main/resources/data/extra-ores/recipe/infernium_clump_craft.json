@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "extra-ores:infernium_block"
+  ],
+  "result": {
+    "id": "extra-ores:infernium_clump",
+    "count": 9
+  }
+}

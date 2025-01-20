@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "extra-ores:raw_luminitite",
+  "result": {
+    "id": "extra-ores:luminitite"
+  },
+  "experience": 1,
+  "cookingtime": 200
+}
