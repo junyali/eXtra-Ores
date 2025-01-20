@@ -17,9 +17,10 @@ My first (and a fun little one!) modification I have made for Minecraft on the F
 
 ## To do
 
-- Add recipes (I don't know why but they don't work :( )
-- Add more functionality, balance stats of tools and armours
-- Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation)
+- Add recipes ✅
+- Add world generation ✅
+- Add more functionality, balance stats of tools and armours 🔨
+- Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation) ❌
 
 ## How to run / build
 
