@@ -7,10 +7,8 @@
     " ~ "
   ],
   "key": {
-    "~": [
-      "minecraft:stick",
-      "extra-ores:infernium_clump"
-    ]
+    "~": "minecraft:stick",
+    "#": "extra-ores:infernium_clump"
   },
   "result": {
     "id": "extra-ores:infernium_sword",
