@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "extra-ores:infernium_hoe",
+  "addition": "extra-ores:voidium_dust",
+  "template": "minecraft:obsidian",
+  "result": {
+    "id": "extra-ores:voidium_hoe",
+    "components": {
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

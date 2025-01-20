@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "extra-ores:infernium_shovel",
+  "addition": "extra-ores:voidium_dust",
+  "template": "minecraft:obsidian",
+  "result": {
+    "id": "extra-ores:voidium_shovel",
+    "components": {
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

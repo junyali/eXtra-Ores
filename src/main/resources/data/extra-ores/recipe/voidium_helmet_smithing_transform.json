@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "extra-ores:infernium_helmet",
+  "addition": "extra-ores:voidium_dust",
+  "template": "minecraft:obsidian",
+  "result": {
+    "id": "extra-ores:voidium_helmet",
+    "components": {
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

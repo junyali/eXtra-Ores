@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "extra-ores:infernium_sword",
+  "addition": "extra-ores:voidium_dust",
+  "template": "minecraft:obsidian",
+  "result": {
+    "id": "extra-ores:voidium_sword",
+    "components": {
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}
