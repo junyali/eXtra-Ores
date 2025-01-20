@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#~#",
+    "###"
+  ],
+  "key": {
+    "#": "extra-ores:infernium_clump",
+    "~": "#minecraft:coals"
+  },
+  "result": {
+    "id": "extra-ores:scorched_coal",
+    "count": 3
+  },
+  "show_notification": true
+}

@@ -1,7 +1,6 @@
 package io.github.junyali.extra_ores.block;
 
 import io.github.junyali.extra_ores.EXtraOres;
-import io.github.junyali.extra_ores.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -54,6 +53,16 @@ public class ModBlocks {
             Identifier.of(EXtraOres.MOD_ID, "voidium_block")
     );
 
+    // Misc Keys
+    public static final RegistryKey<Block> IGNIS_BLOCK_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "ignis_block")
+    );
+    public static final RegistryKey<Block> SCORCHED_IGNIS_BLOCK_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "scorched_ignis_block")
+    );
+
     // Luminitite Blocks
     public static final Block LUMINITITE_ORE = register(
             new Block(AbstractBlock.Settings.create().registryKey(LUMINITITE_ORE_KEY).sounds(BlockSoundGroup.SMALL_AMETHYST_BUD).strength(4.0f).requiresTool()),
@@ -100,6 +109,18 @@ public class ModBlocks {
             true
     );
 
+    // Misc Blocks
+    public static final Block IGNIS_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().registryKey(IGNIS_BLOCK_KEY).sounds(BlockSoundGroup.NETHERRACK).strength(3.0f).requiresTool()),
+            IGNIS_BLOCK_KEY,
+            true
+    );
+    public static final Block SCORCHED_IGNIS_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().registryKey(SCORCHED_IGNIS_BLOCK_KEY).sounds(BlockSoundGroup.NETHERRACK).strength(1.0f).requiresTool()),
+            SCORCHED_IGNIS_BLOCK_KEY,
+            true
+    );
+
 
     public static Block register(Block block, RegistryKey<Block> blockKey, boolean shouldRegisterItem) {
 
@@ -126,6 +147,8 @@ public class ModBlocks {
             entries.add(INFERNIUM_BLOCK);
             entries.add(END_VOIDIUM_ORE);
             entries.add(VOIDIUM_BLOCK);
+            entries.add(IGNIS_BLOCK);
+            entries.add(SCORCHED_IGNIS_BLOCK);
         });
     }
 }

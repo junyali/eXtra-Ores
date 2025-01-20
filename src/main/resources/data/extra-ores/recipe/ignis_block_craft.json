@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#~#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:netherrack",
+    "~": "extra-ores:scorched_coal"
+  },
+  "result": {
+    "id": "extra-ores:ignis_block",
+    "count": 1
+  },
+  "show_notification": true
+}

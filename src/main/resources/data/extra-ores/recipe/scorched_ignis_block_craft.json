@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#~#",
+    "~@~",
+    "#~#"
+  ],
+  "key": {
+    "#": "extra-ores:infernium_block",
+    "~": "extra-ores:scorched_coal",
+    "@": "extra-ores:ignis_block"
+  },
+  "result": {
+    "id": "extra-ores:scorched_ignis_block",
+    "count": 1
+  },
+  "show_notification": true
+}

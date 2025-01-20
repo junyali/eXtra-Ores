@@ -29,6 +29,9 @@
   "item.extra-ores.voidium_dust": "Voidium Dust",
   "item.extra-ores.end_voidium_ore": "Voidium Ore",
   "item.extra-ores.voidium_block": "Block of Voidium",
+  "item.extra-ores.scorched_coal": "Scorched Coal",
+  "item.extra-ores.ignis_block": "Ignis",
+  "item.extra-ores.scorched_ignis_block": "Scorched Ignis",
   "block.extra-ores.luminitite_ore": "Luminitite Ore",
   "block.extra-ores.deepslate_luminitite_ore": "Deepslate Luminitite Ore",
   "block.extra-ores.luminitite_block": "Block of Luminitite",
@@ -36,5 +39,7 @@
   "block.extra-ores.nether_infernium_ore": "Infernium Ore",
   "block.extra-ores.infernium_block": "Block of Infernium",
   "block.extra-ores.end_voidium_ore": "Voidium Ore",
-  "block.extra-ores.voidium_block": "Block of Voidium"
+  "block.extra-ores.voidium_block": "Block of Voidium",
+  "block.extra-ores.ignis_block": "Ignis",
+  "block.extra-ores.scorched_ignis_block": "Scorched Ignis"
 }

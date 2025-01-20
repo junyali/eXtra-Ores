@@ -1,9 +1,11 @@
 package io.github.junyali.extra_ores.item;
 
 import io.github.junyali.extra_ores.EXtraOres;
+import io.github.junyali.extra_ores.block.ModBlocks;
 import io.github.junyali.extra_ores.tool.ModToolMaterial;
 import io.github.junyali.extra_ores.armor.ModArmorMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentAssetKeys;
@@ -48,6 +50,9 @@ public class ModItems {
     public static final RegistryKey<Item> VOIDIUM_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_chestplate"));
     public static final RegistryKey<Item> VOIDIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_leggings"));
     public static final RegistryKey<Item> VOIDIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_boots"));
+
+    // Misc Keys
+    public static final RegistryKey<Item> SCORCHED_COAL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "scorched_coal"));
 
     // Luminitite Items
     public static final Item LUMINITITE = register(
@@ -144,6 +149,12 @@ public class ModItems {
             VOIDIUM_BOOTS_KEY
     );
 
+    // Misc Items
+    public static final Item SCORCHED_COAL = register(
+            new Item(new Item.Settings().registryKey(SCORCHED_COAL_KEY)),
+            SCORCHED_COAL_KEY
+    );
+
     public static Item register(Item item, RegistryKey<Item> registryKey) {
         return Registry.register(Registries.ITEM, registryKey.getValue(), item);
     }
@@ -156,6 +167,7 @@ public class ModItems {
             entries.add(RAW_LUMINITITE);
             entries.add(INFERNIUM_CLUMP);
             entries.add(VOIDIUM_DUST);
+            entries.add(SCORCHED_COAL);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
@@ -182,6 +194,11 @@ public class ModItems {
             entries.add(VOIDIUM_CHESTPLATE);
             entries.add(VOIDIUM_LEGGINGS);
             entries.add(VOIDIUM_BOOTS);
+        });
+
+        FuelRegistryEvents.BUILD.register((builder, context) -> {
+            builder.add(SCORCHED_COAL, 3200);
+            builder.add(ModBlocks.SCORCHED_IGNIS_BLOCK, 40000);
         });
 
     }
