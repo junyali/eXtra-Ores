@@ -1,38 +1,44 @@
-# eXtra Ores
+<p align="center"><img src="./preview/icon.png" alt="Logo" width="200"></p>
 
-My first (and a fun little one!) modification I have made for Minecraft on the Fabric mod loader! Adds new ores, items and their respective tools and armour sets to play around with.
+<h1 align="center">eXtra Ores & Items <br>
+    <a href="https://github.com/junyali/extra-ores/actions/workflows/build.yml"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/junyali/extra-ores/build.yml?branch=1.21.4"></a>
+    <a href="https://github.com/junyali/extra-ores/releases/"><img alt="Versions available for" src="https://img.shields.io/badge/Available_for-1.21.4_Fabric-rgb(255%2C0%2C0)"></a>
+    <a href="https://github.com/junyali/extra-ores/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/junyali/extra-ores"></a>
+    <br>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/extra-ores-items"><img alt="curseforge" height="28" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@2/assets/compact/available/curseforge_vector.svg"></a>
+    <a href="https://modrinth.com/mod/extra-ores-items"><img alt="modrinth" height="28" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@2/assets/compact/available/modrinth_vector.svg"></a>
+    <br><br>
+</h1>
 
-## Preview
+<p>eXtra Ores & Items is a small QoL mod aimed to add a small variety of extra, well.. ores and items!</p>
+<p>Ores can be found generated in all dimensions of Minecraft, with multiple unique recipes and equipment.</p>
+<p>This mod is still in alpha, and is my first Minecraft mod :P</p>
 
-![Main Demo](https://github.com/junyali/extra-ores/blob/v1.0.1/preview/demo_main.png?raw=true "Main Demo")
-![Demo Items](https://github.com/junyali/extra-ores/blob/v1.0.1/preview/demo_items.png?raw=true "Items Demo")
-![Demo Infernium](https://github.com/junyali/extra-ores/blob/v1.0.1/preview/demo_infernium.png?raw=true "Infernium Demo")
-![Demo Voidium](https://github.com/junyali/extra-ores/blob/v1.0.1/preview/demo_voidium.png?raw=true "Voidium Demo")
+<h2>Gallery <br>
+    <img alt="Main Showcase" src="./preview/demo_main.png">
+    <img alt="Items" src="./preview/demo_items.png">
+    <img alt="Luminitite Ores" src="./preview/demo_luminitite.png">
+    <img alt="Infernium Ores" src="./preview/demo_infernium.png">
+    <img alt="Voidium Ores" src="./preview/demo_voidium.png">
+    <br><br>
+</h2>
 
-## Features
+<h2 align="center">Features <br></h2>
+<ul>
+    <li>Add recipes ✅</li>
+    <li>Add world generation ✅</li>
+    <li>Add more functionality, balance stats of tools and armours 🔨</li>
+    <li>Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation) ❌</li>
+</ul>
 
-- Luminitite Ore, found in the overworld with glowing properties (WIP)
-- Infernium Ore, found in the nether with fiery properties (WIP)
-- Voidium Ore, found in the end (WIP)
-
-## To do
-
-- Add recipes ✅
-- Add world generation ✅
-- Add more functionality, balance stats of tools and armours 🔨
-- Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation) ❌
-
-## How to run / build
-
-### Requirements
-
-**Fabric:** This mod was built on Fabric version *0.114.3+1.21.4*
-
-### Building
-
-This mod was developed on Intellij IDEA Ultimate, though may work with other Java IDEs that support the Gradle Build Tool
-
-Importing from `build.gradle`, run:
+<h2 align="center">How to run / build <br></h2>
+<h3>Requirements</h3>
+<p><b>Fabric: </b>This mod was built on Fabric version 0.114.3+1.21.4</p>
+<h3>Running</h3>
+<p>Download the latest release <a href="https://github.com/junyali/extra-ores/releases">here</a>.</p>
+<h3>Building</h3>
+<p>This mod was developed on Intellij IDEA Ultimate, though may work with other Java IDEs that support the Gradle Build Tool</p>
+<p>Importing from `build.gradle`, run:</p>
 
 ```console
 $ ./gradlew
