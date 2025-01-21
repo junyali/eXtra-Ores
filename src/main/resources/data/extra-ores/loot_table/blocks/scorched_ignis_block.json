@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ignis_block",
+          "name": "extra-ores:ignis_block",
           "weight": 100.0,
           "quantity": 1
         }
