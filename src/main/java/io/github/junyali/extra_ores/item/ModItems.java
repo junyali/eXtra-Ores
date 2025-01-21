@@ -91,11 +91,11 @@ public class ModItems {
             INFERNIUM_HOE_KEY
     );
     public static final Item INFERNIUM_HELMET = register(
-            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(INFERNIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(5))),
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(INFERNIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(11))),
             INFERNIUM_HELMET_KEY
     );
     public static final Item INFERNIUM_CHESTPLATE = register(
-            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(INFERNIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(30))),
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(INFERNIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(16))),
             INFERNIUM_CHESTPLATE_KEY
     );
     public static final Item INFERNIUM_LEGGINGS = register(
@@ -103,7 +103,7 @@ public class ModItems {
             INFERNIUM_LEGGINGS_KEY
     );
     public static final Item INFERNIUM_BOOTS = register(
-            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(INFERNIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(10))),
+            new ArmorItem(ModArmorMaterial.INFERNIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(INFERNIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(13))),
             INFERNIUM_BOOTS_KEY
     );
 
@@ -133,11 +133,11 @@ public class ModItems {
             VOIDIUM_HOE_KEY
     );
     public static final Item VOIDIUM_HELMET = register(
-            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(VOIDIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(5))),
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(VOIDIUM_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(12))),
             VOIDIUM_HELMET_KEY
     );
     public static final Item VOIDIUM_CHESTPLATE = register(
-            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(VOIDIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(30))),
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(VOIDIUM_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(16))),
             VOIDIUM_CHESTPLATE_KEY
     );
     public static final Item VOIDIUM_LEGGINGS = register(
@@ -145,7 +145,7 @@ public class ModItems {
             VOIDIUM_LEGGINGS_KEY
     );
     public static final Item VOIDIUM_BOOTS = register(
-            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(VOIDIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(10))),
+            new ArmorItem(ModArmorMaterial.VOIDIUM_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(VOIDIUM_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(12))),
             VOIDIUM_BOOTS_KEY
     );
 
