@@ -12,32 +12,32 @@ import java.util.Map;
 
 public class ModArmorMaterial {
     public static final ArmorMaterial INFERNIUM_TIER = new ArmorMaterial(
-            15,
+            50,
             Map.of(
-                    EquipmentType.HELMET, 3,
-                    EquipmentType.CHESTPLATE, 8,
-                    EquipmentType.LEGGINGS, 6,
-                    EquipmentType.BOOTS, 3
+                    EquipmentType.HELMET, 5,
+                    EquipmentType.CHESTPLATE, 10,
+                    EquipmentType.LEGGINGS, 8,
+                    EquipmentType.BOOTS, 5
             ),
-            5,
+            20,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
-            0.0F,
-            0.0F,
+            6.0F,
+            0.5F,
             TagKey.of(RegistryKeys.ITEM, Identifier.of("infurium_clump")),
             ModItems.INFERNIUM_ARMOR_MATERIAL_KEY
     );
     public static final ArmorMaterial VOIDIUM_TIER = new ArmorMaterial(
-            20,
+            80,
             Map.of(
-                    EquipmentType.HELMET, 4,
-                    EquipmentType.CHESTPLATE, 10,
-                    EquipmentType.LEGGINGS, 8,
-                    EquipmentType.BOOTS, 4
+                    EquipmentType.HELMET, 8,
+                    EquipmentType.CHESTPLATE, 16,
+                    EquipmentType.LEGGINGS, 12,
+                    EquipmentType.BOOTS, 8
             ),
-            6,
+            30,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
-            4.0F,
-            4.0F,
+            12.0F,
+            1.0F,
             TagKey.of(RegistryKeys.ITEM, Identifier.of("voidium_dust")),
             ModItems.VOIDIUM_ARMOR_MATERIAL_KEY
     );
