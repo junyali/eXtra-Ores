@@ -4,10 +4,10 @@ My first (and a fun little one!) modification I have made for Minecraft on the F
 
 ## Preview
 
-![Main Demo](https://github.com/junyali/extra-ores/blob/master/preview/demo_main.png?raw=true "Main Demo")
-![Demo Items](https://github.com/junyali/extra-ores/blob/master/preview/demo_items.png?raw=true "Items Demo")
-![Demo Infernium](https://github.com/junyali/extra-ores/blob/master/preview/demo_infernium.png?raw=true "Infernium Demo")
-![Demo Voidium](https://github.com/junyali/extra-ores/blob/master/preview/demo_voidium.png?raw=true "Voidium Demo")
+![Main Demo](https://github.com/junyali/extra-ores/blob/v1.0.0/preview/demo_main.png?raw=true "Main Demo")
+![Demo Items](https://github.com/junyali/extra-ores/blob/v1.0.0/preview/demo_items.png?raw=true "Items Demo")
+![Demo Infernium](https://github.com/junyali/extra-ores/blob/v1.0.0/preview/demo_infernium.png?raw=true "Infernium Demo")
+![Demo Voidium](https://github.com/junyali/extra-ores/blob/v1.0.0/preview/demo_voidium.png?raw=true "Voidium Demo")
 
 ## Features
 
