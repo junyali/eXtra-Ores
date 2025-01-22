@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block",
+        "extra-ores:cryocite_block"
+    ],
+    "result": {
+        "id": "extra-ores:freezing_cryocite_block",
+        "count": 1
+    }
+}
