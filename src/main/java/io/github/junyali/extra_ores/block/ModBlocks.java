@@ -133,7 +133,7 @@ public class ModBlocks {
 
     // Cryocite Blocks
     public static final Block ICE_CRYOCITE_ORE = register(
-            new Block(AbstractBlock.Settings.create().registryKey(ICE_CRYOCITE_ORE_KEY).sounds(BlockSoundGroup.GLASS).strength(1.0f).requiresTool()),
+            new Block(AbstractBlock.Settings.create().registryKey(ICE_CRYOCITE_ORE_KEY).sounds(BlockSoundGroup.GLASS).strength(1.0f)),
             ICE_CRYOCITE_ORE_KEY,
             true
     );

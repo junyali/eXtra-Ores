@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "extra-ores:luminitite_ore",
-    "extra-ores:deepslate_luminitite_ore",
-    "extra-ores:raw_luminitite_block",
-    "extra-ores:luminitite_block",
     "extra-ores:cryocite_ore",
     "extra-ores:deepslate_cryocite_ore",
     "extra-ores:freezing_cryocite_block",
