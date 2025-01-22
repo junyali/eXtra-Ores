@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:book",
+    "extra-ores:scorched_ignis_block"
+  ],
+  "result": {
+    "id": "minecraft:book",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:fire_aspect": 1
+        },
+        "show_in_tooltip": true
+      }
+    },
+    "count": 1
+  }
+}
