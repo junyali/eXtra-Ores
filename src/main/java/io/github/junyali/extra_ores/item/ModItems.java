@@ -51,6 +51,9 @@ public class ModItems {
     public static final RegistryKey<Item> VOIDIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_leggings"));
     public static final RegistryKey<Item> VOIDIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_boots"));
 
+    // Cryocite Keys
+    public static final RegistryKey<Item> CRYO_SHARD_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryo_shard"));
+
     // Misc Keys
     public static final RegistryKey<Item> SCORCHED_COAL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "scorched_coal"));
 
@@ -149,6 +152,12 @@ public class ModItems {
             VOIDIUM_BOOTS_KEY
     );
 
+    // Cryocite Items
+    public static final Item CRYO_SHARD = register(
+            new Item(new Item.Settings().registryKey(CRYO_SHARD_KEY)),
+            CRYO_SHARD_KEY
+    );
+
     // Misc Items
     public static final Item SCORCHED_COAL = register(
             new Item(new Item.Settings().registryKey(SCORCHED_COAL_KEY)),
@@ -168,6 +177,7 @@ public class ModItems {
             entries.add(INFERNIUM_CLUMP);
             entries.add(VOIDIUM_DUST);
             entries.add(SCORCHED_COAL);
+            entries.add(CRYO_SHARD);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {

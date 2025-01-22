@@ -32,6 +32,12 @@
   "item.extra-ores.scorched_coal": "Scorched Coal",
   "item.extra-ores.ignis_block": "Ignis",
   "item.extra-ores.scorched_ignis_block": "Scorched Ignis",
+  "item.extra-ores.cryo_shard": "Cryo Shard",
+  "item.extra-ores.ice_cryocite_ore": "Cryoice Ore",
+  "item.extra-ores.cryocite_ore": "Cryocite Ore",
+  "item.extra-ores.deepslate_cryocite_ore": "Deepslate Cryocite Ore",
+  "item.extra-ores.cryocite_block": "Block of Cryocite",
+  "item.extra-ores.freezing_cryocite_block": "Block of Freezing Cryocite",
   "block.extra-ores.luminitite_ore": "Luminitite Ore",
   "block.extra-ores.deepslate_luminitite_ore": "Deepslate Luminitite Ore",
   "block.extra-ores.luminitite_block": "Block of Luminitite",
@@ -41,5 +47,10 @@
   "block.extra-ores.end_voidium_ore": "Voidium Ore",
   "block.extra-ores.voidium_block": "Block of Voidium",
   "block.extra-ores.ignis_block": "Ignis",
-  "block.extra-ores.scorched_ignis_block": "Scorched Ignis"
+  "block.extra-ores.scorched_ignis_block": "Scorched Ignis",
+  "block.extra-ores.ice_cryocite_ore": "Cryoice Ore",
+  "block.extra-ores.cryocite_ore": "Cryocite Ore",
+  "block.extra-ores.deepslate_cryocite_ore": "Deepslate Cryocite Ore",
+  "block.extra-ores.cryocite_block": "Block of Cryocite",
+  "block.extra-ores.freezing_cryocite_block": "Block of Freezing Cryocite"
 }
