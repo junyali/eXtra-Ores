@@ -4,6 +4,9 @@
     "extra-ores:luminitite_ore",
     "extra-ores:deepslate_luminitite_ore",
     "extra-ores:raw_luminitite_block",
-    "extra-ores:luminitite_block"
+    "extra-ores:luminitite_block",
+    "extra-ores:nether_infernium_ore",
+    "extra-ores:infernium_block",
+    "extra-ores:scorched_ignis_block"
   ]
 }

@@ -5,9 +5,16 @@
     "extra-ores:deepslate_luminitite_ore",
     "extra-ores:raw_luminitite_block",
     "extra-ores:luminitite_block",
+    "extra-ores:nether_infernium_ore",
+    "extra-ores:infernium_block",
+    "extra-ores:end_voidium_ore",
+    "extra-ores:voidium_block",
+    "extra-ores:ignis_block",
+    "extra-ores:scorched_ignis_block",
+    "extra-ores:ice_cryocite_ore",
     "extra-ores:cryocite_ore",
     "extra-ores:deepslate_cryocite_ore",
-    "extra-ores:freezing_cryocite_block",
+    "extra-ores:cryocite_block",
     "extra-ores:freezing_cryocite_block"
   ]
 }

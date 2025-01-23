@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
+    "extra-ores:ignis_block",
+    "extra-ores:ice_cryocite_ore",
     "extra-ores:cryocite_ore",
     "extra-ores:deepslate_cryocite_ore",
-    "extra-ores:freezing_cryocite_block",
+    "extra-ores:cryocite_block",
     "extra-ores:freezing_cryocite_block"
   ]
 }
