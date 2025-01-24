@@ -1,5 +1,6 @@
 package io.github.junyali.extra_ores.armor;
 
+import io.github.junyali.extra_ores.EXtraOres;
 import io.github.junyali.extra_ores.item.ModItems;
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.EquipmentType;
@@ -23,7 +24,7 @@ public class ModArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             6.0F,
             0.5F,
-            TagKey.of(RegistryKeys.ITEM, Identifier.of("infurium_clump")),
+            TagKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID,"infernium_clump")),
             ModItems.INFERNIUM_ARMOR_MATERIAL_KEY
     );
     public static final ArmorMaterial VOIDIUM_TIER = new ArmorMaterial(
@@ -38,7 +39,7 @@ public class ModArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             12.0F,
             1.0F,
-            TagKey.of(RegistryKeys.ITEM, Identifier.of("voidium_dust")),
+            TagKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_dust")),
             ModItems.VOIDIUM_ARMOR_MATERIAL_KEY
     );
 }
