@@ -6,7 +6,13 @@ import io.github.junyali.extra_ores.tool.ModToolMaterial;
 import io.github.junyali.extra_ores.armor.ModArmorMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.component.type.ConsumableComponent;
+import net.minecraft.component.type.ConsumableComponents;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
+import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 import net.minecraft.item.equipment.EquipmentAsset;
 import net.minecraft.item.equipment.EquipmentAssetKeys;
 import net.minecraft.item.equipment.EquipmentType;
@@ -71,6 +77,13 @@ public class ModItems {
     public static final RegistryKey<Item> CRYOCITE_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_upgrade_smithing_template"));
     public static final RegistryKey<Item> INFERNIUM_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_upgrade_smithing_template"));
     public static final RegistryKey<Item> VOIDIUM_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_upgrade_smithing_template"));
+
+    // Consumables Keys
+    public static final RegistryKey<Item> LUMINOUS_APPLE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "luminous_apple"));
+    public static final RegistryKey<Item> FIERY_APPLE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "fiery_apple"));
+    public static final RegistryKey<Item> INFERNO_STEW_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "inferno_stew"));
+    public static final RegistryKey<Item> FUSION_CARROT_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "fusion_carrot"));
+    public static final RegistryKey<Item> VOID_BERRIES_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "void_berries"));
 
     // Luminitite Items
     public static final Item LUMINITITE = register(
@@ -227,6 +240,88 @@ public class ModItems {
             VOIDIUM_UPGRADE_SMITHING_TEMPLATE_KEY
     );
 
+    // Consumables Components
+    public static final ConsumableComponent GLOWING_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            // 2 minutes: 2 * 60 seconds * 20 ticks per second
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.GLOWING, 2 * 60 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 2 * 60 * 20, 1), 1.0f))
+            .build();
+    public static final FoodComponent GLOWING_FOOD_COMPONENT = new FoodComponent.Builder()
+            .alwaysEdible()
+            .nutrition(4)
+            .saturationModifier(9.6f)
+            .build();
+
+    public static final ConsumableComponent FIERY_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 8 * 60 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2 * 60 * 20, 2), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.HASTE, 4 * 60 * 20, 2), 1.0f))
+            .build();
+    public static final FoodComponent FIERY_FOOD_COMPONENT = new FoodComponent.Builder()
+            .alwaysEdible()
+            .nutrition(4)
+            .saturationModifier(9.6f)
+            .build();
+
+    public static final ConsumableComponent INFERNO_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20 * 60 * 20, 1), 0.8f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2 * 60 * 20, 3), 0.5f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 3 * 60 * 20, 3), 0.3f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 4 * 60 * 20, 3), 0.6f))
+            // too spicy 4 u lol!
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.WITHER, 20 * 20, 1), 0.1f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.HUNGER, 30 * 20, 2), 1.0f))
+            .build();
+    public static final FoodComponent INFERNO_FOOD_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(7.2f)
+            .build();
+
+    public static final ConsumableComponent FUSION_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 8 * 60 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 8 * 60 * 20, 2), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 8 * 60 * 20, 2), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.GLOWING, 8 * 60 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 8 * 60 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 20, 2), 1.0f))
+            .build();
+    public static final FoodComponent FUSION_FOOD_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(14.4f)
+            .build();
+
+    public static final ConsumableComponent VOID_FOOD_CONSUMABLE_COMPONENT = ConsumableComponents.food()
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 5 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20 * 20, 1), 1.0f))
+            .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 8 * 60 * 20, 3), 1.0f))
+            .build();
+    public static final FoodComponent VOID_FOOD_COMPONENT = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(4.8f)
+            .build();
+
+    // Consumables Items
+    public static final Item LUMINOUS_APPLE = register(
+            new Item(new Item.Settings().registryKey(LUMINOUS_APPLE_KEY).food(GLOWING_FOOD_COMPONENT, GLOWING_FOOD_CONSUMABLE_COMPONENT)),
+            LUMINOUS_APPLE_KEY
+    );
+    public static final Item FIERY_APPLE = register(
+            new Item(new Item.Settings().registryKey(FIERY_APPLE_KEY).food(FIERY_FOOD_COMPONENT, FIERY_FOOD_CONSUMABLE_COMPONENT)),
+            FIERY_APPLE_KEY
+    );
+    public static final Item INFERNO_STEW = register(
+            new Item(new Item.Settings().registryKey(INFERNO_STEW_KEY).food(INFERNO_FOOD_COMPONENT, INFERNO_FOOD_CONSUMABLE_COMPONENT)),
+            INFERNO_STEW_KEY
+    );
+    public static final Item FUSION_CARROT = register(
+            new Item(new Item.Settings().registryKey(FUSION_CARROT_KEY).food(FUSION_FOOD_COMPONENT, FUSION_FOOD_CONSUMABLE_COMPONENT)),
+            FUSION_CARROT_KEY
+    );
+    public static final Item VOID_BERRIES = register(
+            new Item(new Item.Settings().registryKey(VOID_BERRIES_KEY).food(VOID_FOOD_COMPONENT, VOID_FOOD_CONSUMABLE_COMPONENT)),
+            VOID_BERRIES_KEY
+    );
+
     public static Item register(Item item, RegistryKey<Item> registryKey) {
         return Registry.register(Registries.ITEM, registryKey.getValue(), item);
     }
@@ -284,6 +379,14 @@ public class ModItems {
            entries.add(INFERNIUM_UPGRADE_SMITHING_TEMPLATE);
            entries.add(CRYOCITE_UPGRADE_SMITHING_TEMPLATE);
            entries.add(VOIDIUM_UPGRADE_SMITHING_TEMPLATE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(LUMINOUS_APPLE);
+            entries.add(FIERY_APPLE);
+            entries.add(INFERNO_STEW);
+            entries.add(FUSION_CARROT);
+            entries.add(VOID_BERRIES);
         });
 
         FuelRegistryEvents.BUILD.register((builder, context) -> {
