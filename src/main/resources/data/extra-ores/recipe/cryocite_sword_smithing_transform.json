@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:diamond_sword",
+  "addition": "extra-ores:freezing_cryocite_block",
+  "template": "extra-ores:cryocite_upgrade_smithing_template",
+  "result": {
+    "id": "extra-ores:cryocite_sword",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:sharpness": 2
+        },
+        "show_in_tooltip": true
+      }
+    },
+    "count": 1
+  }
+}

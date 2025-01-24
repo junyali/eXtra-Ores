@@ -1,8 +1,11 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "extra-ores:infernium_pickaxe",
+  "base": [
+    "extra-ores:infernium_pickaxe",
+    "extra-ores:cryocite_pickaxe"
+  ],
   "addition": "extra-ores:voidium_dust",
-  "template": "minecraft:obsidian",
+  "template": "extra-ores:voidium_upgrade_smithing_template",
   "result": {
     "id": "extra-ores:voidium_pickaxe",
     "components": {

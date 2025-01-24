@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:diamond_helmet",
+  "addition": "extra-ores:infernium_block",
+  "template": "extra-ores:infernium_upgrade_smithing_template",
+  "result": {
+    "id": "extra-ores:infernium_helmet",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:fire_protection": 2
+        },
+        "show_in_tooltip": true
+      }
+    },
+    "count": 1
+  }
+}

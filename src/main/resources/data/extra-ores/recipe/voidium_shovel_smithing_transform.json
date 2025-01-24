@@ -1,8 +1,11 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "extra-ores:infernium_shovel",
+  "base": [
+    "extra-ores:infernium_shovel",
+    "extra-ores:cryocite_shovel"
+  ],
   "addition": "extra-ores:voidium_dust",
-  "template": "minecraft:obsidian",
+  "template": "extra-ores:voidium_upgrade_smithing_template",
   "result": {
     "id": "extra-ores:voidium_shovel",
     "components": {
