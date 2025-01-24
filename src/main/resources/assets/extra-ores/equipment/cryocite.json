@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "extra-ores:cryocite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "extra-ores:cryocite"
+      }
+    ]
+  }
+}

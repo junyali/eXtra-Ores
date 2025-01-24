@@ -1,8 +1,11 @@
 {
   "type": "minecraft:smithing_transform",
-  "base": "extra-ores:infernium_hoe",
+  "base": [
+    "extra-ores:infernium_hoe",
+    "extra-ores:cryocite_hoe"
+  ],
   "addition": "extra-ores:voidium_dust",
-  "template": "minecraft:obsidian",
+  "template": "extra-ores:voidium_upgrade_smithing_template",
   "result": {
     "id": "extra-ores:voidium_hoe",
     "components": {

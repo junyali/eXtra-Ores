@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard",
+        "extra-ores:cryo_shard"
+    ],
+    "result": {
+        "id": "extra-ores:cryocite_block",
+        "count": 1
+    }
+}

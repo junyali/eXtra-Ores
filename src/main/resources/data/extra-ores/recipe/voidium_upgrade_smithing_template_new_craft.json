@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "[~]",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:obsidian",
+    "[": "extra-ores:freezing_cryocite_block",
+    "~": "minecraft:netherite_block",
+    "]": "extra-ores:scorched_ignis_block"
+  },
+  "result": {
+    "id": "extra-ores:voidium_upgrade_smithing_template",
+    "count": 1
+  },
+  "show_notification": true
+}

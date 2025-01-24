@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#~#",
+    "###"
+  ],
+  "key": {
+    "#": "extra-ores:infernium_block",
+    "~": "minecraft:golden_apple"
+  },
+  "result": {
+    "id": "extra-ores:fiery_apple",
+    "components": {
+      "minecraft:enchantment_glint_override": true
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

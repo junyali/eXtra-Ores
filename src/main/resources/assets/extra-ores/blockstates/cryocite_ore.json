@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "extra-ores:block/cryocite_ore"
+    }
+  }
+}

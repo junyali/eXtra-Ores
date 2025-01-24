@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:diamond_hoe",
+  "addition": "extra-ores:infernium_block",
+  "template": "extra-ores:infernium_upgrade_smithing_template",
+  "result": {
+    "id": "extra-ores:infernium_hoe",
+    "components": {
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:efficiency": 1
+        },
+        "show_in_tooltip": true
+      }
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "   ",
+    "[#]",
+    " @ "
+  ],
+  "key": {
+    "[": "minecraft:blaze_powder",
+    "#": "extra-ores:infernium_block",
+    "]": "minecraft:fire_charge",
+    "@": "minecraft:bowl"
+  },
+  "result": {
+    "id": "extra-ores:inferno_stew",
+    "count": 1
+  },
+  "show_notification": true
+}

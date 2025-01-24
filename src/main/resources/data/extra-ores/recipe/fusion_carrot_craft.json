@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " { ",
+    "[#]",
+    " } "
+  ],
+  "key": {
+    "#": "minecraft:golden_carrot",
+    "[": "extra-ores:infernium_block",
+    "]": "extra-ores:cryocite_block",
+    "{": "extra-ores:luminitite_block",
+    "}": "minecraft:diamond"
+  },
+  "result": {
+    "id": "extra-ores:fusion_carrot",
+    "count": 1
+  },
+  "show_notification": true
+}

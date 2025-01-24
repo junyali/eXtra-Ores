@@ -19,15 +19,26 @@
     <img alt="Items" src="./preview/demo_items.png">
     <img alt="Luminitite Ores" src="./preview/demo_luminitite.png">
     <img alt="Infernium Ores" src="./preview/demo_infernium.png">
+    <img alt="Ice Cryocite Ores" src="./preview/demo_cryocite.png">
     <img alt="Voidium Ores" src="./preview/demo_voidium.png">
     <br>
 </h2>
 
 <h2 align="center">Features <br></h2>
 <ul>
+    <li>New Luminitite, Infernium, Cryocite, and Voidium Ores which can be found naturally generated</li>
+    <li>Respective toolsets and armour that goes beyond the netherite tier</li>
+    <li>New food items that give special effects - some are randomised!</li>
+    <li>New efficient source of fuel: Scorched Ignis Block</li>
+</ul>
+
+<h2 align="center">To do <br></h2>
+<ul>
     <li>Add recipes ✅</li>
     <li>Add world generation ✅</li>
     <li>Add more functionality, balance stats of tools and armours 🔨</li>
+    <li>Add consumables ✅</li>
+    <li>Add new mobs! 🔨</li>
     <li>Convert block and item registries to DataGens (tried this once and gave up after like 3 hours due to lack of documentation) ❌</li>
 </ul>
 

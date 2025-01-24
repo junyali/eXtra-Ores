@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " @ ",
+    "[#]",
+    " @ "
+  ],
+  "key": {
+    "#": "minecraft:glow_berries",
+    "@": "minecraft:shulker_shell",
+    "[": "minecraft:ender_pearl",
+    "]": "minecraft:chorus_fruit"
+  },
+  "result": {
+    "id": "extra-ores:void_berries",
+    "count": 1
+  },
+  "show_notification": true
+}

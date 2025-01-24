@@ -53,6 +53,28 @@ public class ModBlocks {
             Identifier.of(EXtraOres.MOD_ID, "voidium_block")
     );
 
+    // Cryocite Keys
+    public static final RegistryKey<Block> ICE_CRYOCITE_ORE_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "ice_cryocite_ore")
+    );
+    public static final RegistryKey<Block> CRYOCITE_ORE_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "cryocite_ore")
+    );
+    public static final RegistryKey<Block> DEEPSLATE_CRYOCITE_ORE_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "deepslate_cryocite_ore")
+    );
+    public static final RegistryKey<Block> CRYOCITE_BLOCK_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "cryocite_block")
+    );
+    public static final RegistryKey<Block> FREEZING_CRYOCITE_BLOCK_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(EXtraOres.MOD_ID, "freezing_cryocite_block")
+    );
+
     // Misc Keys
     public static final RegistryKey<Block> IGNIS_BLOCK_KEY = RegistryKey.of(
             RegistryKeys.BLOCK,
@@ -109,6 +131,33 @@ public class ModBlocks {
             true
     );
 
+    // Cryocite Blocks
+    public static final Block ICE_CRYOCITE_ORE = register(
+            new Block(AbstractBlock.Settings.create().registryKey(ICE_CRYOCITE_ORE_KEY).sounds(BlockSoundGroup.GLASS).strength(1.0f)),
+            ICE_CRYOCITE_ORE_KEY,
+            true
+    );
+    public static final Block CRYOCITE_ORE = register(
+            new Block(AbstractBlock.Settings.create().registryKey(CRYOCITE_ORE_KEY).sounds(BlockSoundGroup.STONE).strength(3.0f).requiresTool()),
+            CRYOCITE_ORE_KEY,
+            true
+    );
+    public static final Block DEEPSLATE_CRYOCITE_ORE = register(
+            new Block(AbstractBlock.Settings.create().registryKey(DEEPSLATE_CRYOCITE_ORE_KEY).sounds(BlockSoundGroup.STONE).strength(4.0f).requiresTool()),
+            DEEPSLATE_CRYOCITE_ORE_KEY,
+            true
+    );
+    public static final Block CRYOCITE_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().registryKey(CRYOCITE_BLOCK_KEY).sounds(BlockSoundGroup.GLASS).strength(6.0f).requiresTool()),
+            CRYOCITE_BLOCK_KEY,
+            true
+    );
+    public static final Block FREEZING_CRYOCITE_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().registryKey(FREEZING_CRYOCITE_BLOCK_KEY).sounds(BlockSoundGroup.CALCITE).strength(8.0f).requiresTool()),
+            FREEZING_CRYOCITE_BLOCK_KEY,
+            true
+    );
+
     // Misc Blocks
     public static final Block IGNIS_BLOCK = register(
             new Block(AbstractBlock.Settings.create().registryKey(IGNIS_BLOCK_KEY).sounds(BlockSoundGroup.NETHERRACK).strength(3.0f).requiresTool()),
@@ -149,6 +198,11 @@ public class ModBlocks {
             entries.add(VOIDIUM_BLOCK);
             entries.add(IGNIS_BLOCK);
             entries.add(SCORCHED_IGNIS_BLOCK);
+            entries.add(ICE_CRYOCITE_ORE);
+            entries.add(CRYOCITE_ORE);
+            entries.add(DEEPSLATE_CRYOCITE_ORE);
+            entries.add(CRYOCITE_BLOCK);
+            entries.add(FREEZING_CRYOCITE_BLOCK);
         });
     }
 }

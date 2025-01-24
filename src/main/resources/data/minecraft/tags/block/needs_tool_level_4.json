@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "extra-ores:end_voidium_ore",
+    "extra-ores:voidium_block"
+  ]
+}

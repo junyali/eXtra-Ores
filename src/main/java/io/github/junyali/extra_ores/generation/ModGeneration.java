@@ -14,9 +14,14 @@ public class ModGeneration {
     public static final RegistryKey<PlacedFeature> LUMINITITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "luminitite_ore_generation"));
     public static final RegistryKey<PlacedFeature> INFERNIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "infernium_ore_generation"));
     public static final RegistryKey<PlacedFeature> VOIDIUM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "voidium_ore_generation"));
+    public static final RegistryKey<PlacedFeature> CRYOCITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "cryocite_ore_generation"));
+    public static final RegistryKey<PlacedFeature> ICE_CRYOCITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "ice_cryocite_ore_generation"));
 
     public static void initialize() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, LUMINITITE_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CRYOCITE_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ICE_CRYOCITE_ORE_PLACED_KEY);
+
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, INFERNIUM_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, VOIDIUM_ORE_PLACED_KEY);
     }
