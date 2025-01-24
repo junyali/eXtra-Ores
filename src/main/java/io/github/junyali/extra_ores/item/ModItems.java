@@ -36,6 +36,21 @@ public class ModItems {
     public static final RegistryKey<Item> INFERNIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_leggings"));
     public static final RegistryKey<Item> INFERNIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_boots"));
 
+    // Cryocite Keys
+    public static final RegistryKey<Item> CRYO_SHARD_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryo_shard"));
+
+    public static final RegistryKey<Item> CRYOCITE_SWORD_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_sword"));
+    public static final RegistryKey<Item> CRYOCITE_PICKAXE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_pickaxe"));
+    public static final RegistryKey<Item> CRYOCITE_AXE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_axe"));
+    public static final RegistryKey<Item> CRYOCITE_SHOVEL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_shovel"));
+    public static final RegistryKey<Item> CRYOCITE_HOE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_hoe"));
+
+    public static final RegistryKey<EquipmentAsset> CRYOCITE_ARMOR_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(EXtraOres.MOD_ID, "cryocite"));
+    public static final RegistryKey<Item> CRYOCITE_HELMET_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_helmet"));
+    public static final RegistryKey<Item> CRYOCITE_CHESTPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_chestplate"));
+    public static final RegistryKey<Item> CRYOCITE_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_leggings"));
+    public static final RegistryKey<Item> CRYOCITE_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_boots"));
+
     // Voidium Keys
     public static final RegistryKey<Item> VOIDIUM_DUST_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_dust"));
 
@@ -51,11 +66,11 @@ public class ModItems {
     public static final RegistryKey<Item> VOIDIUM_LEGGINGS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_leggings"));
     public static final RegistryKey<Item> VOIDIUM_BOOTS_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_boots"));
 
-    // Cryocite Keys
-    public static final RegistryKey<Item> CRYO_SHARD_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryo_shard"));
-
     // Misc Keys
     public static final RegistryKey<Item> SCORCHED_COAL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "scorched_coal"));
+    public static final RegistryKey<Item> CRYOCITE_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "cryocite_upgrade_smithing_template"));
+    public static final RegistryKey<Item> INFERNIUM_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "infernium_upgrade_smithing_template"));
+    public static final RegistryKey<Item> VOIDIUM_UPGRADE_SMITHING_TEMPLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID, "voidium_upgrade_smithing_template"));
 
     // Luminitite Items
     public static final Item LUMINITITE = register(
@@ -110,6 +125,48 @@ public class ModItems {
             INFERNIUM_BOOTS_KEY
     );
 
+    // Cryocite Items
+    public static final Item CRYO_SHARD = register(
+            new Item(new Item.Settings().registryKey(CRYO_SHARD_KEY)),
+            CRYO_SHARD_KEY
+    );
+    public static final Item CRYOCITE_SWORD = register(
+            new SwordItem(ModToolMaterial.CRYOCITE_TIER, 1f, 1f, new Item.Settings().registryKey(CRYOCITE_SWORD_KEY)),
+            CRYOCITE_SWORD_KEY
+    );
+    public static final Item CRYOCITE_PICKAXE = register(
+            new PickaxeItem(ModToolMaterial.CRYOCITE_TIER, 1f, 1f, new Item.Settings().registryKey(CRYOCITE_PICKAXE_KEY)),
+            CRYOCITE_PICKAXE_KEY
+    );
+    public static final Item CRYOCITE_AXE = register(
+            new AxeItem(ModToolMaterial.CRYOCITE_TIER, 1f, -3.5f, new Item.Settings().registryKey(CRYOCITE_AXE_KEY)),
+            CRYOCITE_AXE_KEY
+    );
+    public static final Item CRYOCITE_SHOVEL = register(
+            new ShovelItem(ModToolMaterial.CRYOCITE_TIER, 1f, -2.5f, new Item.Settings().registryKey(CRYOCITE_SHOVEL_KEY)),
+            CRYOCITE_SHOVEL_KEY
+    );
+    public static final Item CRYOCITE_HOE = register(
+            new HoeItem(ModToolMaterial.CRYOCITE_TIER, 1f, -2.5f, new Item.Settings().registryKey(CRYOCITE_HOE_KEY)),
+            CRYOCITE_HOE_KEY
+    );
+    public static final Item CRYOCITE_HELMET = register(
+            new ArmorItem(ModArmorMaterial.CRYOCITE_TIER, EquipmentType.HELMET, new Item.Settings().registryKey(CRYOCITE_HELMET_KEY).maxDamage(EquipmentType.HELMET.getMaxDamage(11))),
+            CRYOCITE_HELMET_KEY
+    );
+    public static final Item CRYOCITE_CHESTPLATE = register(
+            new ArmorItem(ModArmorMaterial.CRYOCITE_TIER, EquipmentType.CHESTPLATE, new Item.Settings().registryKey(CRYOCITE_CHESTPLATE_KEY).maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(16))),
+            CRYOCITE_CHESTPLATE_KEY
+    );
+    public static final Item CRYOCITE_LEGGINGS = register(
+            new ArmorItem(ModArmorMaterial.CRYOCITE_TIER, EquipmentType.LEGGINGS, new Item.Settings().registryKey(CRYOCITE_LEGGINGS_KEY).maxDamage(EquipmentType.LEGGINGS.getMaxDamage(15))),
+            CRYOCITE_LEGGINGS_KEY
+    );
+    public static final Item CRYOCITE_BOOTS = register(
+            new ArmorItem(ModArmorMaterial.CRYOCITE_TIER, EquipmentType.BOOTS, new Item.Settings().registryKey(CRYOCITE_BOOTS_KEY).maxDamage(EquipmentType.BOOTS.getMaxDamage(13))),
+            CRYOCITE_BOOTS_KEY
+    );
+
     // Voidium Items
     public static final Item VOIDIUM_DUST = register(
             new Item(new Item.Settings().registryKey(VOIDIUM_DUST_KEY)),
@@ -152,16 +209,22 @@ public class ModItems {
             VOIDIUM_BOOTS_KEY
     );
 
-    // Cryocite Items
-    public static final Item CRYO_SHARD = register(
-            new Item(new Item.Settings().registryKey(CRYO_SHARD_KEY)),
-            CRYO_SHARD_KEY
-    );
-
     // Misc Items
     public static final Item SCORCHED_COAL = register(
             new Item(new Item.Settings().registryKey(SCORCHED_COAL_KEY)),
             SCORCHED_COAL_KEY
+    );
+    public static final Item CRYOCITE_UPGRADE_SMITHING_TEMPLATE = register(
+            new Item(new Item.Settings().registryKey(CRYOCITE_UPGRADE_SMITHING_TEMPLATE_KEY)),
+            CRYOCITE_UPGRADE_SMITHING_TEMPLATE_KEY
+    );
+    public static final Item INFERNIUM_UPGRADE_SMITHING_TEMPLATE = register(
+            new Item(new Item.Settings().registryKey(INFERNIUM_UPGRADE_SMITHING_TEMPLATE_KEY)),
+            INFERNIUM_UPGRADE_SMITHING_TEMPLATE_KEY
+    );
+    public static final Item VOIDIUM_UPGRADE_SMITHING_TEMPLATE = register(
+            new Item(new Item.Settings().registryKey(VOIDIUM_UPGRADE_SMITHING_TEMPLATE_KEY)),
+            VOIDIUM_UPGRADE_SMITHING_TEMPLATE_KEY
     );
 
     public static Item register(Item item, RegistryKey<Item> registryKey) {
@@ -187,6 +250,12 @@ public class ModItems {
             entries.add(INFERNIUM_SHOVEL);
             entries.add(INFERNIUM_HOE);
 
+            entries.add(CRYOCITE_SWORD);
+            entries.add(CRYOCITE_PICKAXE);
+            entries.add(CRYOCITE_AXE);
+            entries.add(CRYOCITE_SHOVEL);
+            entries.add(CRYOCITE_HOE);
+
             entries.add(VOIDIUM_SWORD);
             entries.add(VOIDIUM_PICKAXE);
             entries.add(VOIDIUM_AXE);
@@ -200,10 +269,21 @@ public class ModItems {
             entries.add(INFERNIUM_LEGGINGS);
             entries.add(INFERNIUM_BOOTS);
 
+            entries.add(CRYOCITE_HELMET);
+            entries.add(CRYOCITE_CHESTPLATE);
+            entries.add(CRYOCITE_LEGGINGS);
+            entries.add(CRYOCITE_BOOTS);
+
             entries.add(VOIDIUM_HELMET);
             entries.add(VOIDIUM_CHESTPLATE);
             entries.add(VOIDIUM_LEGGINGS);
             entries.add(VOIDIUM_BOOTS);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+           entries.add(INFERNIUM_UPGRADE_SMITHING_TEMPLATE);
+           entries.add(CRYOCITE_UPGRADE_SMITHING_TEMPLATE);
+           entries.add(VOIDIUM_UPGRADE_SMITHING_TEMPLATE);
         });
 
         FuelRegistryEvents.BUILD.register((builder, context) -> {

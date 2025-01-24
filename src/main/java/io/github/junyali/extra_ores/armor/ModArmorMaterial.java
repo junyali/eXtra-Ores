@@ -27,6 +27,21 @@ public class ModArmorMaterial {
             TagKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID,"infernium_clump")),
             ModItems.INFERNIUM_ARMOR_MATERIAL_KEY
     );
+    public static final ArmorMaterial CRYOCITE_TIER = new ArmorMaterial(
+            50,
+            Map.of(
+                    EquipmentType.HELMET, 5,
+                    EquipmentType.CHESTPLATE, 10,
+                    EquipmentType.LEGGINGS, 8,
+                    EquipmentType.BOOTS, 5
+            ),
+            20,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+            6.0F,
+            0.5F,
+            TagKey.of(RegistryKeys.ITEM, Identifier.of(EXtraOres.MOD_ID,"cryo_shard")),
+            ModItems.CRYOCITE_ARMOR_MATERIAL_KEY
+    );
     public static final ArmorMaterial VOIDIUM_TIER = new ArmorMaterial(
             80,
             Map.of(
