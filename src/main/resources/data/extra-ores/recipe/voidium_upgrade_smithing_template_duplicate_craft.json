@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#~#",
+    "#@#",
+    "###"
+  ],
+  "key": {
+    "#": "extra-ores:voidium_dust",
+    "~": "extra-ores:voidium_upgrade_smithing_template",
+    "@": "minecraft:end_stone"
+  },
+  "result": {
+    "id": "extra-ores:voidium_upgrade_smithing_template",
+    "count": 1
+  },
+  "show_notification": false
+}
