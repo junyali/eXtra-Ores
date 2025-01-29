@@ -18,6 +18,8 @@ public class ModGeneration {
     public static final RegistryKey<PlacedFeature> ICE_CRYOCITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(EXtraOres.MOD_ID, "ice_cryocite_ore_generation"));
 
     public static void initialize() {
+        EXtraOres.LOGGER.info("Registered Mod Generation for " + EXtraOres.MOD_ID);
+
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, LUMINITITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CRYOCITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ICE_CRYOCITE_ORE_PLACED_KEY);
